@@ -1,0 +1,123 @@
+/* Estilos gerais */
+
+/*Estilos do header*/
+
+.header-container {
+    background-color: rgba(0, 0, 0, 0.432);
+    color: white;
+    padding: 0 10px 0px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 99
+}
+
+.nav-bar {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-bar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-bar a:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Estilos do main */
+
+main {
+    background: linear-gradient(black 20%, #F2D49B);
+    padding: 20% 10px 10px 10px
+}
+
+.banner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.slogan {
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    margin-bottom: 50px;
+}
+
+.slogan-description {
+    color: rgb(194, 194, 194);
+    font-size: 20px;
+    text-align: center;
+}
+
+.fade-up {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-up.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.presentation-video {
+    border-radius: 10px;
+    transition: scale 0.2s ease-out;
+    box-shadow: -5px 5px 7px 2px rgba(0, 0, 0, 0.315);
+}
+
+.presentation-video:hover {
+    scale: 1.03;
+}
+
+.video-478x850 {
+    width: 30%;
+    height: 30%;
+}
+
+.video-720x1280 {
+    width: 30%;
+    height: 30%;
+}
+
+.videos-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.slogan-container {
+    margin-bottom: 10%
+}
+
+/*.carousel-image {
+    height: 800px;
+}*/
+
+/* Estios do footer */ 
+
+.footer-container {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-text {
+    margin: 10px;
+}
