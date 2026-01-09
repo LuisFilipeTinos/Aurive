@@ -53,7 +53,7 @@ main {
     padding: 20% 10px 10px 10px
 }
 
-.banner-container {
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,18 +61,16 @@ main {
     padding: 40px;
 }
 
-.slogan {
+.slogan-title {
     color: white;
-    font-size: 60px;
+    font-size: 80px;
     text-align: center;
-    font-family: "Dancing Script", cursive;
-    font-optical-sizing: auto;
     margin-bottom: 50px;
 }
 
 .slogan-description {
     color: rgb(194, 194, 194);
-    font-size: 20px;
+    font-size: 25px;
     text-align: center;
 }
 
@@ -116,7 +114,56 @@ main {
     margin-bottom: 10%
 }
 
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+}
 
+.font-dancing-script {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10%
+}
+
+.about-title {
+    font-size: 60px;
+}
+
+.about-description {
+    font-size: 20px;
+    text-align: center;
+}
+
+.icons {
+    display: flex;
+    gap: 15%;
+    width: 100%;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.icon-title {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
 /*.carousel-image {
     height: 800px;
 }*/
