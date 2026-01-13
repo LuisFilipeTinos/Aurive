@@ -1,4 +1,36 @@
 document.addEventListener('DOMContentLoaded', () => {
+  
+  const iconMission = document.getElementById('icon-mission');
+  const iconValues = document.getElementById('icon-values');
+
+  const iconsIntegration = document.getElementsByClassName('icon-contact');
+
+  if (window.screen.width >= 800) {
+    iconMission.classList.remove('fa-xl');
+    iconMission.classList.add('fa-2xl');
+
+    iconValues.classList.remove('fa-xl');
+    iconValues.classList.add('fa-2xl');
+
+    for (const element of iconsIntegration) {
+      element.classList.remove('fa-2x');
+      element.classList.add('fa-3x');
+    }
+  }
+  else {
+    iconMission.classList.remove('fa-2xl');
+    iconMission.classList.add('fa-xl');
+
+    iconValues.classList.remove('fa-2xl');
+    iconValues.classList.add('fa-xl');
+
+    for (const element of iconsIntegration) {
+      element.classList.remove('fa-3x');
+      element.classList.add('fa-2x');
+    }
+  }
+      
+  
   const elements = document.querySelectorAll('.fade-up');
 
   const observer = new IntersectionObserver(entries => {

@@ -146,6 +146,10 @@ main {
     color: rgb(255, 255, 255);
 }
 
+#icon-title-text {
+    margin: 0;
+}
+
 .icons {
     display: flex;
     width: 100%;
@@ -222,4 +226,51 @@ main {
 #map { 
     height: 180px; 
     width: 100%;
+}
+
+/* Responsividade para mobile - media-queries */
+
+@media (max-width: 800px) {
+    .slogan-container {
+        margin-top: 120px;
+    }
+    
+    .header-container {
+        flex-direction: column;
+    }
+
+    .slogan-title, .generic-title {
+        font-size: 40px;
+    }
+
+    .slogan-description, .font-description {
+        font-size: 15px;
+    }
+
+    .icon-title h2 {
+        font-size: 18px;
+    }
+
+    .videos-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .video-478x850, .video-720x1280 {
+        margin-bottom: 10px;
+        width: 70%;
+    }
+
+    .product-image {
+        width: 40%;
+        height: 40%;
+    }
+
+    h3.integration-title {
+        font-size: 16px;
+    }
+
+    .footer-text {
+        font-size: 13px
+    }
 }
