@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   elements.forEach(el => observer.observe(el));
 
-  fetch('../images.json')
+  fetch('images.json')
     .then(res => res.json())
     .then(images => {
       const gallery = document.querySelector('.image-gallery');
