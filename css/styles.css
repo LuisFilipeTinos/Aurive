@@ -231,6 +231,10 @@ main {
 /* Responsividade para mobile - media-queries */
 
 @media (max-width: 800px) {
+    .image-logo {
+        width: 15%;
+    }
+
     .slogan-container {
         margin-top: 120px;
     }
