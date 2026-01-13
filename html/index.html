@@ -8,7 +8,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../images/favicon_io/favicon.ico"/>
     <script src="https://kit.fontawesome.com/ee8a07e228.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
     <title>Auriv&#235</title> <!-- o código &#235 é o código da letra e com acento (trema) -->
 </head>
 <body>
@@ -18,8 +25,8 @@
             <div class="nav-bar">
                 <a href="#beginning">Início</a>
                 <a href="#about">Sobre</a>
-                <a href="#">Produtos</a>
-                <a href="#">Contato</a>
+                <a href="#products">Produtos</a>
+                <a href="#contact">Contato</a>
             </div>
         </div>
     </header>
@@ -27,8 +34,8 @@
     <main>
         <section class="container" id="beginning">
             <div class="slogan-container fade-up">
-                <h1 class="slogan-title font-dancing-script">Teste de slogan</h1>
-                <p class="slogan-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae voluptatibus est nulla dolorem perferendis magni optio illum et iste facilis officiis deserunt harum, quibusdam fuga dignissimos distinctio. Totam, sequi exercitationem.</p>
+                <h1 class="slogan-title font-dancing-script">Sua elegância, sua força, sua marca!</h1>
+                <p class="slogan-description">Aurivë Semijoias representa sofisticação, luxo discreto e empoderamento feminino. A marca é voltada para mulheres independentes, elegantes e modernas, que buscam semijoias minimalistas, sofisticadas e versáteis.</p>
             </div>
 
             <div class="videos-container fade-up">
@@ -40,78 +47,63 @@
 
         <section class="container" id="about">
             <div class="about-container fade-up">
-                <h1 class="about-title font-dancing-script">Quem somos?</h1>
-                <p class="about-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit vitae id totam ipsum magni laudantium numquam, excepturi neque eveniet aut nesciunt. Quis accusamus libero quas nemo non sint modi vitae.</p>
+                <h1 class="generic-title font-dancing-script">Sobre nós</h1>
             </div>
 
             <div class="icons fade-up">
                 <div class="icon-container">
-                    <div class="icon-title">
+                    <div class="icon-title mb-3">
                         <i class="fa-solid fa-bullseye fa-2xl"></i>
-                        <h2>Missão</h2>
+                        <h2>Nossa Missão</h2>
                     </div>
-                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quam fuga porro! Aperiam ducimus perspiciatis repudiandae ipsam dolorum nam dicta laboriosam, pariatur, omnis cumque, quidem quaerat eius debitis aliquam minus!</p>
-                </div>
-                
-                <div class="icon-container">
-                    <div class="icon-title">
-                        <i class="fa-solid fa-lightbulb fa-2xl"></i>
-                        <h2>Visão</h2>
-                    </div>
-                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quam fuga porro! Aperiam ducimus perspiciatis repudiandae ipsam dolorum nam dicta laboriosam, pariatur, omnis cumque, quidem quaerat eius debitis aliquam minus!</p>
+                    <p class="text-center text-white font-description">Oferecer semijoias de qualidade, que traduzam sofisticação e autenticidade, para mulheres que desejam expressar sua força, beleza e empoderamento em todas as fases da vida.
+                        Mais do que adornos, oferecemos peças que contam histórias, refletem personalidade e acompanham conquistas.</p>
                 </div>
 
                 <div class="icon-container">
-                    <div class="icon-title">
+                    <div class="icon-title mb-3">
                         <i class="fa-solid fa-gem fa-2xl"></i>
-                        <h2>Valores</h2>
+                        <h2>Nossos Valores</h2>
                     </div>
-                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quam fuga porro! Aperiam ducimus perspiciatis repudiandae ipsam dolorum nam dicta laboriosam, pariatur, omnis cumque, quidem quaerat eius debitis aliquam minus!</p>
+                    <p class="text-center text-white font-description">Acreditamos que toda mulher merece se sentir sofisticada sem abrir mão da praticidade. Por isso, trabalhamos com um mix de semijoias que valoriza a elegância acessível, atendendo a diferentes perfis e ocasiões — do minimalismo do dia a dia ao brilho das celebrações. Cada peça é escolhida com cuidado para inspirar confiança, empoderar e refletir a força e a autenticidade de nossas clientes. Prezamos pela qualidade em cada detalhe, selecionando fornecedores que priorizam excelente acabamento e materiais de alto padrão, garantindo durabilidade e beleza. Tudo isso aliado a um atendimento próximo, transparente e humanizado, construído com confiança e respeito, sempre focado em oferecer a melhor experiência para nossas clientes.</p>
                 </div>
             </div>
         </section>
 
-        <!-- <div class="carousel-container">
-            <div id="carouselBootstrap53" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselBootstrap53" data-bs-slide-to="0" class="active"></button>
-                    <button type="button" data-bs-target="#carouselBootstrap53" data-bs-slide-to="1"></button>
-                    <button type="button" data-bs-target="#carouselBootstrap53" data-bs-slide-to="2"></button>
-                </div>
-        
-                
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="../images/carrossel_1.jpeg"
-                             class="d-block w-100 carousel-image" alt="Slide 1">
-                    </div>
-        
-                    <div class="carousel-item">
-                        <img src="../images/carrossel_2.jpeg"
-                             class="d-block w-100 carousel-image" alt="Slide 2">
-                    </div>
-        
-                    <div class="carousel-item">
-                        <img src="../images/carrossel_3.jpeg"
-                             class="d-block w-100 carousel-image" alt="Slide 3">
-                    </div>
-                </div>
-        
-                
-                <button class="carousel-control-prev" type="button"
-                        data-bs-target="#carouselBootstrap53" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </button>
-        
-                <button class="carousel-control-next" type="button"
-                        data-bs-target="#carouselBootstrap53" data-bs-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </button>
+        <section class="container" id="products">
+            <div class="fade-up">
+                <h2 class="generic-title font-dancing-script mb-5 text-center text-white">Algumas de nossas semijoias</h2>
+                <div class="image-gallery "></div>  
             </div>
-        </div> -->
+        </section>
+
+        <section class="container" id="contact">
+            <div class="fade-up">
+                <div>
+                    <h2 class="generic-title font-dancing-script text-center text-white">Entre em contato conosco!</h2>
+                    <p class="text-center text-white mb-5 font-description">Precisa de ajuda ou quer saber mais sobre nossos produtos? Entre em contato, será um prazer atender você!</p>
+                </div>
+                <div class="contact-icon-container">
+                    <div class="text-center text-white">
+                        <a href="#" class="text-white" id="link-whatsapp"><i class="fa-brands fa-whatsapp fa-3x mb-4 icon-contact"></i></a>
+                        <h3>WhatsApp</h3>
+                    </div>
+                    <div class="text-center text-white">
+                        <a href="#" class="text-white" id="link-instagram"><i class="fa-brands fa-instagram fa-3x mb-4 icon-contact"></i></a>
+                        <h3>Instagram</h3>
+                    </div>
+                    <div class="text-center text-white">
+                        <a href="#" class="text-white" id="link-email"><i class="fa-regular fa-envelope fa-3x mb-4 icon-contact"></i></a>
+                        <h3>E-mail</h3>
+                    </div>
+                </div>
+            </div>
+        </section>       
     </main>
 
     <footer class="footer-container">
+        <p class="footer-text"> <i class="fa-solid fa-location-dot"></i> R. Coronel Simões, 21 - Dois Córregos, SP, 17300-000</p>
+        <div id="map"></div>
         <p class="footer-text">&copy; 2026 Auriv&#235. Todos os direitos reservados</p>
     </footer>
     <script src="../javascript/script.js"></script>

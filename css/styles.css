@@ -49,7 +49,7 @@
 /* Estilos do main */
 
 main {
-    background: linear-gradient(black 20%, #F2D49B);
+    background: linear-gradient(black 20%, #5f533e);
     padding: 20% 10px 10px 10px
 }
 
@@ -132,29 +132,31 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 10%
+    margin-bottom: 5%
 }
 
-.about-title {
+.generic-title {
     font-size: 60px;
+    color: white;
 }
 
 .about-description {
     font-size: 20px;
     text-align: center;
+    color: rgb(255, 255, 255);
 }
 
 .icons {
     display: flex;
-    gap: 15%;
     width: 100%;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .icon-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
     flex-direction: column;
 }
 
@@ -163,10 +165,43 @@ main {
     flex-direction: row;
     gap: 10px;
     align-items: center;
+    color: white;
 }
-/*.carousel-image {
-    height: 800px;
-}*/
+
+.font-description {
+    font-size: 20px;
+}
+
+.text-white {
+    color: rgb(252, 252, 252);
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.product-image {
+    width: 20%; 
+    height: 20%; 
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    margin: 2%;
+    box-shadow: -5px 5px 7px 2px rgba(0, 0, 0, 0.315);
+}
+
+.product-image:hover {
+    transform: translateY(-8px);
+}
+
+.contact-icon-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 
 /* Estios do footer */ 
 
@@ -182,4 +217,9 @@ main {
 
 .footer-text {
     margin: 10px;
+}
+
+#map { 
+    height: 180px; 
+    width: 100%;
 }
