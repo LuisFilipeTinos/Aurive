@@ -17,6 +17,8 @@
 .nav-bar {
     display: flex;
     gap: 10px;
+    padding-bottom: 5px;
+
 }
 
 .nav-bar a {
@@ -231,9 +233,6 @@ main {
 /* Responsividade para mobile - media-queries */
 
 @media (max-width: 800px) {
-    .image-logo {
-        width: 15%;
-    }
 
     .slogan-container {
         margin-top: 120px;
