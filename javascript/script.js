@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     //Lógica de contato com o WhatsApp
-    const numeroWhatsApp = "5514997054006";
+    const numeroWhatsApp = "5514997958402";
     const mensagemWhatsApp = encodeURIComponent("Olá! Gostaria de ver mais semijoias.");
 
     const urlWhatsApp = `whatsapp://send?phone=${numeroWhatsApp}&text=${mensagemWhatsApp}`;
